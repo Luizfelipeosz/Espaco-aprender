@@ -1,0 +1,225 @@
+/* =========================
+   VARIÁVEIS ACESSÍVEIS
+========================= */
+:root {
+    --primary: #6366f1;        /* azul calmo */
+    --secondary: #4ade80;      /* verde suave */
+    --bg: #f8fafc;             /* fundo mais claro */
+    --text: #1f2937;
+    --muted: #4b5563;          /* texto menos apagado */
+    --card: #ffffff;
+    --focus: #4f46e5;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: linear-gradient(135deg, #6366f1, #60a5fa);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* Botão de voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgb(255, 0, 0);
+    border: none;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.back-button:hover {
+    background: rgba(238, 0, 0, 0.4);
+}
+
+/* =========================
+   SEÇÃO CONTATO
+========================= */
+.contact {
+    max-width: 1100px;
+    margin: -40px auto 0;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* =========================
+   TEXTO EMOCIONAL
+========================= */
+.contact-text h2 {
+    font-size: 2.1rem;
+    margin-bottom: 22px;
+    color: #1e293b;
+}
+
+.contact-text p {
+    font-size: 1.08rem;
+    color: var(--muted);
+    max-width: 520px;
+}
+
+.highlight {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #117283, #002842);
+    padding: 26px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #d1fae5;
+    font-size: 1.05rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+}
+
+.highlight:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.highlight p {
+    color: #a7f3d0;
+    text-decoration: underline;
+}
+/* =========================
+   FORMULÁRIO
+========================= */
+.contact-form {
+    background: #ffffff;
+    padding: 46px;
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 2px solid #e5e7eb;
+    font-size: 1rem;
+    background-color: #f9fafb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--focus);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(79,70,229,0.15);
+}
+
+/* Placeholder acessível */
+::placeholder {
+    color: #9ca3af;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+.contact-form button {
+    width: 100%;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #ffffff;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(34,197,94,0.4);
+}
+
+.contact-form button:active {
+    transform: scale(0.98);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.whatsapp img {
+    width: 32px;
+    height: 32px;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.6); }
+    70% { box-shadow: 0 0 0 18px rgba(34,197,94,0); }
+    100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 26px;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 900px) {
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-text h2 {
+        font-size: 1.8rem;
+    }
+}

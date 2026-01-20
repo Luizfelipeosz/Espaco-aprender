@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Espaço Aprender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<main class="login-container">
+    <form id="loginForm" class="login-card" novalidate>
+        <h1>Área do Professor</h1>
+        <p class="subtitle">Entre para acessar o sistema</p>
+
+        <div class="input-group">
+            <input type="email" id="email" placeholder="E-mail" autocomplete="username" required>
+        </div>
+
+        <div class="input-group password-wrapper">
+    <input
+        type="password"
+        id="senha"
+        placeholder="Senha"
+        autocomplete="current-password"
+        required
+    >
+    <button
+        type="button"
+        class="toggle-password"
+        aria-label="Mostrar senha"
+    >
+        👁
+    </button>
+</div>
+
+        <button type="submit" class="btn-primary">Entrar</button>
+
+        <div class="divider">
+            <span>ou</span>
+        </div>
+
+        <button type="button" class="btn-secondary" onclick="irParaCadastro()">
+            Criar nova conta
+        </button>
+
+        <span class="mensagem" id="mensagem" aria-live="polite"></span>
+    </form>
+</main>
+
+<script src="login.js"></script>
+</body>
+</html>
