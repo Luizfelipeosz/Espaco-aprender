@@ -18,9 +18,6 @@ A aplicação simula um ambiente educacional moderno, com interface intuitiva e 
 - Componentes reutilizáveis
 - Otimização de performance e carregamento
 
-## ▶️ Demonstração
-🔗 https://seu-projeto.vercel.app
-
 ## 📷 Preview
 _(adicione aqui imagens ou um GIF da aplicação em funcionamento)_
 
