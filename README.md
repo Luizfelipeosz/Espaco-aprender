@@ -1,2 +1,38 @@
 # Espaco-aprender
-Desenvolvimento de um site para uma empresa de acolhimento de crianças e adolescentes. Principal objetivo era fazer com que os pais pudessem ter o máximo de interações com o site de forma simples, isso incluiu um design moderno, mas simples, e interações com o site.
+# 🎓 Espaço Aprender – Plataforma Educacional
+
+Projeto Front-End desenvolvido em **React** para a plataforma **Espaço Aprender**, com foco em **performance, acessibilidade, SEO e experiência do usuário**.  
+A aplicação simula um ambiente educacional moderno, com interface intuitiva e responsiva.
+
+## 🚀 Tecnologias
+- React
+- JavaScript (ES6+)
+- CSS3
+- Consumo de API REST
+- Boas práticas de SEO
+
+## 📌 Funcionalidades
+- Exibição dinâmica de conteúdos educacionais
+- Interface responsiva (desktop, tablet e mobile)
+- Organização clara de seções e informações
+- Componentes reutilizáveis
+- Otimização de performance e carregamento
+
+## ▶️ Demonstração
+🔗 https://seu-projeto.vercel.app
+
+## 📷 Preview
+_(adicione aqui imagens ou um GIF da aplicação em funcionamento)_
+
+---
+
+### 📍 Observações
+- Estrutura de código organizada e escalável
+- Projeto focado em clareza visual e usabilidade
+- Desenvolvido seguindo boas práticas de Front-End
+
+## 🎯 Aprendizados
+- Estruturação de componentes em React
+- Consumo e tratamento de dados via API
+- Melhoria de SEO em aplicações SPA
+- Responsividade e experiência do usuário
